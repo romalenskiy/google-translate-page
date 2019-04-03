@@ -8,12 +8,12 @@
   <title>Google Translate</title>
 </head>
 <body class="body">
-  <header class="header">
+  <header class="row header">
     <div class="menu" title="Main menu">
       <svg class="button header-button menu__button" focusable="false" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
     </div>
 
-    <a href="#" class="link header__logo logo" title="Translate">
+    <a href="#" class="row link header__logo logo" title="Translate">
       <img class="logo__brand" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
       <span class="logo__name">Translate</span>
     </a>
@@ -36,6 +36,25 @@
         <button class="button translate-mode__switcher translate-mode__switcher_documents">
           Documents
         </button>
+      </div>
+    </nav>
+
+    <nav class="container row language-selector">
+      <div class="row s-50 m-50 language-selector__language-from">
+        <button class="language-selector__language-button language-selector__language-button_detect">DETECT LANGUAGE</button>
+        <button class="language-selector__language-button language-selector__language-button_active">RUSSIAN</button>
+        <button class="language-selector__language-button">ENGLISH</button>
+        <button class="language-selector__language-button">GERMAN</button>
+        <button class="language-selector__language-button language-selector__language-button_more"></button>
+      </div>
+      
+      <button class="button language-selector__language-button language-selector__language-button_switch"></button>
+
+      <div class="row s-50 m-50 language-selector__language-in">
+        <button class="language-selector__language-button">RUSSIAN</button>
+        <button class="language-selector__language-button language-selector__language-button_active">ENGLISH</button>
+        <button class="language-selector__language-button">GERMAN</button>
+        <button class="language-selector__language-button language-selector__language-button_more"></button>
       </div>
     </nav>
 

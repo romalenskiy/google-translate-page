@@ -59,6 +59,10 @@ General
   box-sizing: border-box;
 }
 
+button {
+  font-family: inherit;
+}
+
 .html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -70,6 +74,15 @@ General
   padding-right: 0;
   padding-left: 0;
 
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .link {
@@ -88,8 +101,6 @@ Header
 */
 
 .header {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 0.5rem 0.8rem;
   border-bottom: 1px solid #e1e1e1;
@@ -117,10 +128,56 @@ Header
 
 /*
 =======================================
-Main
+Language selector navbar
 =======================================
 */
 
+.language-selector {
+  background-color: white;
+  margin-top: -7rem;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.language-selector__language-button {
+  color: #777;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  outline: none;
+}
+
+.language-selector__language-button:active {
+  background-color: #f5f5f5;
+}
+
+.language-selector__language-button_active {
+  color: #4285f4;
+  border-bottom: 3px solid #4284f3;
+}
+
+.language-selector__language-button_more {
+  background-image: url(https://ssl.gstatic.com/images/icons/material/system_gm/1x/keyboard_arrow_down_grey600_24dp.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem 1.7rem;
+}
+
+.language-selector__language-button_switch {
+  background-image: url(/images/language_switch.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem 1.6rem;
+  border-radius: 50%;
+  opacity: 0.55;
+}
+
+.language-selector__language-button_switch:hover {
+  opacity: 1;
+}
 /*
 =======================================
 Translate mode navbar
@@ -186,8 +243,6 @@ Logo
 */
 
 .logo {
-  display: flex;
-  flex-direction: row;
   align-items: start;
 }
 
@@ -205,6 +260,15 @@ Media queries
 
 /* small only */
 @media screen and (max-width: 39.9375rem) {
+  .s-50 {
+    flex-basis: 50%;
+  }
+
+  .language-selector {
+    margin-top: 0;
+    border-top: none;
+  }
+
   .header__apps {
     display: none;
   }
@@ -212,11 +276,64 @@ Media queries
   .translate-mode {
     display: none;
   }
+
+  .language-selector__language-from {
+    justify-content: center;
+  }
+
+  .language-selector__language-in {
+    justify-content: center;
+  }
+  
+  .language-selector__language-button {
+    display: none;
+  }
+
+  .language-selector__language-button_active, .language-selector__language-button_switch {
+    display: initial;
+  }
+  
+  .language-selector__language-button {
+    padding: 0.7rem;
+  }
+
+  .language-selector__language-button_switch {
+    padding: 0.7rem 1.3rem;
+  }
+
+  .language-selector__language-button_active {
+    border: none;
+  }
 }
 
 /* medium and up */
 @media screen and (min-width: 40rem) {
+  .m-50 {
+    flex-basis: 50%;
+  }
+
+  .language-selector__language-from {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .language-selector__language-in {
+    margin-left: 1rem;
+  }
+
   .header__google-account  {
     margin-left: 1rem;
+  }
+}
+
+/* after container collapse */
+@media screen and (max-width: 81rem) {
+  .language-selector {
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .translate-mode {
+    padding-left: 1rem;
   }
 }
