@@ -39,25 +39,81 @@
       </div>
     </nav>
 
-    <nav class="container row language-selector">
-      <div class="row s-50 m-50 language-selector__language-from">
-        <button class="language-selector__language-button language-selector__language-button_detect">DETECT LANGUAGE</button>
-        <button class="language-selector__language-button language-selector__language-button_active">RUSSIAN</button>
-        <button class="language-selector__language-button">ENGLISH</button>
-        <button class="language-selector__language-button">GERMAN</button>
-        <button class="language-selector__language-button language-selector__language-button_more"></button>
-      </div>
-      
-      <button class="button language-selector__language-button language-selector__language-button_switch"></button>
+    <div class="container primary-shadow translation-block">
+      <nav class="row language-selector translation-block__language-selector">
+        <div class="row s-50 m-50 language-selector__language-from">
+          <button class="button language-selector__language-button language-selector__language-button_detect">DETECT LANGUAGE</button>
+          <button class="button language-selector__language-button language-selector__language-button_active">RUSSIAN</button>
+          <button class="button language-selector__language-button">ENGLISH</button>
+          <button class="button language-selector__language-button">GERMAN</button>
+          <button class="button language-selector__language-button language-selector__language-button_more"></button>
+        </div>
+        
+        <button class="button language-selector__language-button language-selector__language-button_switch"></button>
+  
+        <div class="row s-50 m-50 language-selector__language-in">
+          <button class="button language-selector__language-button">RUSSIAN</button>
+          <button class="button language-selector__language-button language-selector__language-button_active">ENGLISH</button>
+          <button class="button language-selector__language-button">GERMAN</button>
+          <button class="button language-selector__language-button language-selector__language-button_more"></button>
+        </div>
+      </nav>
+  
+      <section class="row wrap translator translation-block__translator">
+        <div class="s-100 m-50 row translator__input translation-block__input">
+          <textarea class="translator__textarea"></textarea>
+          <button class="button translator__button translator__button_clear"></button>
+        </div>
+        <div class="s-100 m-50 row translator__output translation-block__output">
+          <textarea class="translator__textarea" readonly></textarea>
+          <button class="button translator__button translator__button_star"></button>
+        </div>
+      </section>
+    </div>
 
-      <div class="row s-50 m-50 language-selector__language-in">
-        <button class="language-selector__language-button">RUSSIAN</button>
-        <button class="language-selector__language-button language-selector__language-button_active">ENGLISH</button>
-        <button class="language-selector__language-button">GERMAN</button>
-        <button class="language-selector__language-button language-selector__language-button_more"></button>
+    <div class="container row wrap hints-block">
+      <div class="s-100 m-50 m-order-2 column hints-block_column">
+        <div class="hints-block__hint">
+          <h4>Definitions:</h4>
+          <p>
+            Quis est consequat mollit duis ex proident veniam. Nostrud anim officia eu aute consequat ad eiusmod voluptate cupidatat. Do dolore occaecat fugiat veniam amet laboris et laboris commodo duis anim. Sunt nostrud nostrud eiusmod eiusmod sint proident et do exercitation cillum in officia nisi. Nisi sit exercitation minim proident aliquip id irure proident. Anim elit eu velit non ex exercitation fugiat.
+          </p>
+          <p>
+            Enim tempor minim ex enim non commodo non fugiat in anim. Cupidatat aliqua do pariatur occaecat tempor sunt pariatur mollit amet. Minim Lorem ut velit ex anim cupidatat duis. Sunt dolore ea culpa eu reprehenderit.
+          </p>
+        </div>
+  
+        <div class="hints-block__hint">
+          <h4>Examples:</h4>
+          <p>
+            Ullamco occaecat sunt culpa elit ea mollit aute eu amet duis excepteur occaecat cillum fugiat. Ullamco non tempor ad voluptate nisi est ea dolor cupidatat est fugiat aliqua fugiat minim. Ex proident fugiat consectetur amet fugiat ad incididunt eu cillum consectetur. Aute adipisicing minim ea minim est nisi dolore nisi officia consequat deserunt do irure. Est labore elit voluptate ipsum mollit ea irure excepteur laboris.
+          </p>
+        </div>
+  
+        <div class="hints-block__hint">
+          <h4>Synonyms:</h4>
+          <p>
+            Pariatur exercitation sit occaecat cupidatat velit amet sit mollit exercitation eiusmod ex. In pariatur sint ad Lorem anim Lorem eu mollit esse mollit voluptate nisi officia irure. Non tempor ea officia adipisicing occaecat fugiat fugiat. Consequat minim sunt veniam deserunt magna occaecat.
+          </p>
+          <p>
+            Nulla adipisicing officia non enim Lorem aute proident velit adipisicing. Eiusmod ex proident nostrud cupidatat labore velit consequat incididunt ea ex anim. Nostrud velit quis minim id laboris. Irure incididunt id labore nulla fugiat non. Anim ea officia eiusmod minim labore aliquip. Elit laborum dolore sit pariatur veniam et incididunt aliqua consequat aute. Eu aute non irure veniam duis aute ex.
+          </p>
+        </div>
       </div>
-    </nav>
 
+      <div class="s-100 m-50 m-order-1 column hints-block_column">
+        <div class="hints-block__hint">
+          <h4>Translations:</h4>
+          <p>
+            Irure excepteur voluptate cillum voluptate voluptate velit excepteur Lorem. Mollit sit tempor nisi Lorem. Duis ex aute sit aute. Irure est ut culpa irure sint minim deserunt exercitation officia. Occaecat minim duis et deserunt deserunt id fugiat elit dolore non do Lorem. Duis nisi ipsum culpa incididunt reprehenderit quis duis do non in excepteur nostrud in reprehenderit.
+          </p>
+          <p>
+            Aliqua tempor culpa non ea occaecat ex exercitation dolore sint voluptate adipisicing laborum. Ullamco qui exercitation dolor ullamco sit officia mollit nisi veniam. Do ullamco id ipsum cupidatat non id ad ipsum est veniam cillum. Adipisicing consequat proident eu labore dolor deserunt aliqua. Consectetur amet id duis in. Voluptate ad ex enim labore quis proident ipsum cupidatat minim amet minim nisi commodo qui.
+          </p>
+        </div>
+      </div>
+
+    </div>
   </main>
 </body>
 </html>
