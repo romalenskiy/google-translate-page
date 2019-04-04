@@ -226,6 +226,7 @@ Hints block
   border-radius: 0.5rem;
   border: 1px solid #e1e1e1;
   margin-bottom: 0.5rem;
+  background-color: white;
 }
 
 .hints-block__hint p {
@@ -389,6 +390,10 @@ Media queries
     order: 2;
   }
 
+  .main {
+    background-color: #f5f5f5;
+  }
+
   .translation-block {
     margin-top: 0;
     border-top: none;
@@ -396,6 +401,14 @@ Media queries
 
   .translator__output {
     background-color: #1a73e8;
+  }
+
+  .hints-block_column:nth-child(1) {
+    padding-right: 0;
+  }
+
+  .hints-block_column:nth-child(2) {
+    padding-left: 0;
   }
 
   .header__apps {
@@ -461,7 +474,7 @@ Media queries
     box-shadow: none;
   }
 
-  .translation-block, .translation-block__input, .translation-block__output {
+  .translation-block, .translation-block__language-selector, .translation-block__input, .translation-block__output {
     border-radius: 0;
   }
 
